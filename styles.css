@@ -1,0 +1,98 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: white;
+}
+html {
+    height:100%;
+}
+body {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+.titel {
+    font-weight: bold;
+    font-size: 8rem;
+}
+
+nav {
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill--buttons {
+background-color: #56E1B7;
+color: black;
+min-width: 8rem;
+min-height: 4rem;
+padding: 1rem;
+border-radius: 12px;
+transition-duration: 0.4s;
+
+}
+
+.skill--buttons:hover {
+    background-color: #25AED0;
+    color: white;
+
+}
+
+.skill--buttons.clicked {
+background-color: red;
+color: white;
+}
+
+.smoelenframes {
+    height:60%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(1fr, 33%);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem 1rem;
+}
+
+.frame {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    height: 15rem;
+    width: 12rem;
+    overflow: auto;
+    border-radius: 10%;
+    background-color: #CBEDF6;
+}
+
+.foto {
+    overflow: hidden;
+}
+
+.personentext {
+    align-self: center;
+    justify-self: center;
+    color: black;
+    background-color: #CBEDF6;
+}
+
+.foto img {
+    object-fit: contain;
+    width: 100%;
+   
+
+}
+
+.hidden {
+    display: none;
+}
